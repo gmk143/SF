@@ -1,0 +1,3 @@
+trigger AddWiproNewAccName on Account (before insert) {
+    AddWiproNewAccNameApexClass.AddWiproNewAccNameMethod();
+}

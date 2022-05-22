@@ -1,0 +1,15 @@
+@istest
+public class AddWiproNewAccNameApexTestClass {
+       @istest
+    public static void AddWiproNewAccNameTestMethod(){
+ //test schenario
+        //trigger
+        account accObj = new Account(); // instanciation
+        accObj.name='145';// assigning new account
+        insert accObj;// DML to insert data to dDB directly from Apex
+        
+        
+
+     AddWiproNewAccNameApexClass.AddWiproNewAccNameMethod();
+        
+    }}

@@ -1,0 +1,16 @@
+public class AddWiproNewAccNameApexClass {
+  public static void AddWiproNewAccNameMethod(){
+      
+      
+      Account accObj=new Account();
+           accObj=[select name from account where name='145'];// it is not recommededn to have hardcoding
+         accObj.Name='Wipro'+accObj.Name;
+      
+      list<account> accUpdate=new list<account>();
+        accUpdate.add(accObj);
+      
+           
+      upsert accUpdate;
+       system.debug('Update success.'+ accObj.Name);
+        
+  }}
